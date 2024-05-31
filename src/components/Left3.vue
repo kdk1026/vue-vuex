@@ -10,7 +10,8 @@ import { useStore } from "vuex";
 
     const store = useStore();
 
-    const number = computed(() => store.state.number.number);
+    // const number = computed(() => store.state.number.number);
+    const number = computed(() => store.getters["number/getNumber"]);
 </script>
 
 <style scoped>
