@@ -24,6 +24,11 @@ const numberStore = {
         incrementByAmount(context, amount) {
             context.commit('incrementByAmount', amount);
         }
+    },
+    getters: {
+        getNumber(state) {
+            return state.number;
+        }
     }
 };
 
